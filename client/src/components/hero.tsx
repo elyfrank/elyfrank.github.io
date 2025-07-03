@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">
-            <div className="w-32 h-32 bg-gradient-to-br from-portfolio-primary to-portfolio-accent rounded-full mx-auto mb-6 flex items-center justify-center">
+            <div className="w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
               <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
               </svg>
