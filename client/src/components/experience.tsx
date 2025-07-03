@@ -78,7 +78,11 @@ export default function Experience() {
 
           {experiences.map((exp, index) => (
             <div key={index} className="relative flex items-center mb-12 last:mb-0">
-              <div className={`absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-${exp.color} rounded-full border-4 border-white shadow-lg flex items-center justify-center`}>
+              <div className={`absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full border-4 border-white shadow-lg flex items-center justify-center ${
+                exp.color === 'portfolio-primary' ? 'bg-blue-600' :
+                exp.color === 'portfolio-accent' ? 'bg-blue-500' :
+                'bg-slate-600'
+              }`}>
                 {getIcon(exp.icon)}
               </div>
               
@@ -87,7 +91,11 @@ export default function Experience() {
                   <div className={`mb-4 ${index % 2 === 0 ? 'md:flex md:flex-col md:items-end' : ''}`}>
                     <span className="text-sm text-slate-500 mb-2 block">{exp.period}</span>
                     <h3 className="text-xl font-semibold text-slate-900">{exp.position}</h3>
-                    <p className={`text-${exp.color} font-medium`}>{exp.company}</p>
+                    <p className={`font-medium ${
+                      exp.color === 'portfolio-primary' ? 'text-blue-600' :
+                      exp.color === 'portfolio-accent' ? 'text-blue-500' :
+                      'text-slate-600'
+                    }`}>{exp.company}</p>
                   </div>
                   <p className="text-slate-700 leading-relaxed mb-4">
                     {exp.description}
@@ -109,7 +117,11 @@ export default function Experience() {
                       {exp.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className={`bg-${exp.color}/10 text-${exp.color} px-3 py-1 rounded-full text-sm`}
+                          className={`px-3 py-1 rounded-full text-sm ${
+                            exp.color === 'portfolio-primary' ? 'bg-blue-100 text-blue-600' :
+                            exp.color === 'portfolio-accent' ? 'bg-blue-50 text-blue-500' :
+                            'bg-slate-100 text-slate-600'
+                          }`}
                         >
                           {tech}
                         </span>
