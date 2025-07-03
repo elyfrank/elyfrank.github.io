@@ -58,7 +58,7 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
             Vamos Conversar
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
             Estou sempre aberto a novas oportunidades e desafios. Entre em contato para discutirmos seu próximo projeto.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function Contact() {
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">{contact.type}</h3>
-              <p className="text-slate-600 mb-4">{contact.description}</p>
+              <p className="text-slate-700 mb-4">{contact.description}</p>
               {contact.type === "Localização" ? (
                 <p className="text-slate-700 text-sm whitespace-pre-line">
                   {contact.value}
@@ -92,7 +92,7 @@ export default function Contact() {
         <div className="text-center">
           <div className="bg-gradient-to-r from-portfolio-primary to-portfolio-accent rounded-lg p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">Pronto para o próximo projeto?</h3>
-            <p className="text-blue-100 mb-6">
+            <p className="text-white/90 mb-6">
               Vamos criar algo incrível juntos. Entre em contato e vamos discutir como posso ajudar sua empresa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
