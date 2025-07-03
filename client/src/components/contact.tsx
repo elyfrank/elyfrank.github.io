@@ -90,21 +90,21 @@ export default function Contact() {
         </div>
 
         <div className="text-center">
-          <div className="bg-gradient-to-r from-portfolio-primary to-portfolio-accent rounded-lg p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Pronto para o próximo projeto?</h3>
-            <p className="text-white/90 mb-6">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-8 text-white">
+            <h3 className="text-2xl font-bold mb-4 text-white">Pronto para o próximo projeto?</h3>
+            <p className="text-white mb-6">
               Vamos criar algo incrível juntos. Entre em contato e vamos discutir como posso ajudar sua empresa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:elyfrankmo@gmail.com"
-                className="bg-white text-portfolio-primary px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
               >
                 Enviar Email
               </a>
               <a
                 href="tel:+5561981802455"
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-portfolio-primary transition-colors duration-200"
+                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
               >
                 Ligar Agora
               </a>
