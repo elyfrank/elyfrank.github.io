@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern portfolio website for Ely Frank Matias Oliveira, a Senior Full Stack Developer from Natal, Brazil. The application is built as a single-page application (SPA) showcasing professional experience, skills, education, and contact information. The project follows a monorepo structure with clear separation between client, server, and shared components.
+This is a modern portfolio website for Ely Frank Matias Oliveira, a Senior Full Stack Developer from Natal, Brazil with 15+ years of experience. The application is built as a single-page application (SPA) showcasing professional experience, skills, education, and contact information. The project follows a monorepo structure with clear separation between client, server, and shared components.
 
 ## System Architecture
 

@@ -68,7 +68,7 @@ export default function Experience() {
             Experiência Profissional
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Mais de uma década desenvolvendo soluções tecnológicas para governo e empresas privadas
+            Mais de 15 anos desenvolvendo soluções tecnológicas para governo e empresas privadas
           </p>
         </div>
 

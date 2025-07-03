@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-              Desenvolvedor Full Stack com mais de 10 anos de experiência em desenvolvimento de sistemas para o setor público e privado. 
+              Desenvolvedor Full Stack com mais de 15 anos de experiência em desenvolvimento de sistemas para o setor público e privado. 
               Especializado em PHP, Laravel, AngularJS, e tecnologias modernas de desenvolvimento web. 
               Atualmente atuando como Desenvolvedor Sênior na Linuxell Informática, trabalhando em projetos para o Ministério do Trabalho e Emprego.
             </p>
