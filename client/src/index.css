@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(215, 20%, 11%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(215, 20%, 11%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(215, 20%, 11%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 98%);
+  --secondary-foreground: hsl(215, 16%, 47%);
+  --accent: hsl(217, 91%, 60%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --ring: hsl(217, 91%, 60%);
+  --radius: 0.5rem;
+  
+  /* Custom portfolio colors */
+  --portfolio-primary: hsl(217, 91%, 60%);
+  --portfolio-secondary: hsl(215, 16%, 47%);
+  --portfolio-accent: hsl(220, 91%, 64%);
+  --portfolio-slate-50: hsl(210, 40%, 98%);
+  --portfolio-slate-900: hsl(215, 28%, 17%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5%, 84%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .bg-portfolio-primary {
+    background-color: var(--portfolio-primary);
+  }
+  
+  .text-portfolio-primary {
+    color: var(--portfolio-primary);
+  }
+  
+  .bg-portfolio-secondary {
+    background-color: var(--portfolio-secondary);
+  }
+  
+  .text-portfolio-secondary {
+    color: var(--portfolio-secondary);
+  }
+  
+  .bg-portfolio-accent {
+    background-color: var(--portfolio-accent);
+  }
+  
+  .text-portfolio-accent {
+    color: var(--portfolio-accent);
+  }
+  
+  .bg-portfolio-slate-50 {
+    background-color: var(--portfolio-slate-50);
+  }
+  
+  .bg-portfolio-slate-900 {
+    background-color: var(--portfolio-slate-900);
+  }
+}
