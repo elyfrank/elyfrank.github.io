@@ -1,0 +1,42 @@
+Ely Frank Matias Oliveira
+Brasileiro, solteiro, 36 anos 
+Av. Antonio Basilio 2977
+Lagoa Nova – Natal – RN 
+Telefone:  (61) 98180-2455 E-mail: elyfrankmo@gmail.com
+
+FORMAÇÃO
+
+Análise e Desenvolvimento de Sistemas - Em andamento
+DevOps Essentials Professional Certificate (DEPC)	
+Scrum Foundation Professional Certificate (SFPC)
+Certified Scrum Developer (CSD)
+
+EXPERIÊNCIA PROFISSIONAL
+
+
+2024–(ATUAL) – Linuxell Informática 
+
+Principal Atuação: Desenvolvedor Sênior
+Atuação na sustentação, evolução e desenvolvimento de novos sistemas para o Ministério do Trabalho e Emprego, utilizando tecnologias como AngularJS, PHP, Laravel e o banco de dados PostgreSQL. Sempre buscando a aplicação de metodologias ágeis para aprimorar os processos de desenvolvimento.
+
+2014–2024 – Websis Tecnologia e Sistemas 
+
+Principal Atuação: Desenvolvedor Full Stack
+Iniciei minha jornada como desenvolvedor na Websis e tive a oportunidade de trabalhar em diversos projetos. Alguns dos principais clientes foram o Governo Federal e Estadual, incluindo ENAP, STF, SEST, PRODABEL (Prefeitura de Belo Horizonte) e CBMDF. Participei ativamente da criação e manutenção de diversos sistemas, tanto internos quanto externos, desempenhando papéis como desenvolvedor backend e frontend. Ocupei a posição de responsável técnico pelos projetos em que estava envolvido.
+
+2009–2012 – Montreal Informática 
+
+Principal Atuação: Analista GED/ECM
+Minha primeira experiência em uma empresa de tecnologia durou três anos. Iniciei como auxiliar administrativo e fui progredindo para a área de suporte, chegando eventualmente a se tornar analista e desenvolvedor em uma ferramenta específica de gerenciamento de conteúdo chamada Documentum e Captiva, ambas pertencentes à ECM. Destaco entre os principais projetos os trabalhos realizados para a AVON e a ANVISA, nos quais a empresa era responsável por digitalizar informações.
+
+QUALIFICAÇÕES E ATIVIDADES PROFISSIONAIS
+
+PHP - Laravel / ZF1 / ZF2 / SIMEC / SYMFONY
+Node.js
+AngulaJS / Javascript / TypeScript
+PostgreSQL / Mysql / SQL Server / Oracle
+VUE / VUE 3 / Vuetify / NestJS / React
+Doctrine ORM
+SVN / GIT
+Docker / Docker-compose
+Linux
