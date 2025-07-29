@@ -19,7 +19,7 @@ export default function Contact() {
     {
       type: "Localização",
       description: "Natal, Rio Grande do Norte",
-      value: "Av. Antonio Basilio 2977\nLagoa Nova - Natal - RN",
+      value: "Natal - RN",
       href: "#",
       icon: "location",
       color: "red"
