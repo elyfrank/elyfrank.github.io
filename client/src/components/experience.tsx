@@ -4,7 +4,11 @@ export default function Experience() {
       period: "2024 - Atual",
       position: "Desenvolvedor Sênior",
       company: "Linuxell Informática",
-      description: "Atuação na sustentação, evolução e desenvolvimento de novos sistemas para o Ministério do Trabalho e Emprego, utilizando tecnologias como AngularJS, PHP, Laravel e PostgreSQL. Aplicação de metodologias ágeis para aprimorar os processos de desenvolvimento.",
+      description: "Atualmente na Agência Goiana de Defesa Agropecuária (AGRODEFESA), atuo no desenvolvimento e sustentação de sistemas críticos, como o SIDAGO, e na digitalização de serviços essenciais como a emissão de Guia de Trânsito Animal (GTA), Permissões de Trânsito de Vegetais (PTV) e passaporte equestre. Modernizando a defesa sanitária e os serviços de fiscalização do estado, aplicando metodologias ágeis para garantir entregas eficientes.",
+      clients: [
+        "Agência Goiana de Defesa Agropecuária (AGRODEFESA)",
+        "Ministério do Trabalho e Emprego (MTE)"
+      ],
       technologies: ["PHP", "Laravel", "AngularJS", "PostgreSQL"],
       icon: "briefcase",
       color: "portfolio-primary"
@@ -68,7 +72,7 @@ export default function Experience() {
             Experiência Profissional
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Mais de 15 anos desenvolvendo soluções tecnológicas para governo e empresas privadas
+            Mais de 16 anos desenvolvendo soluções tecnológicas para governo e empresas privadas
           </p>
         </div>
 

@@ -1,9 +1,21 @@
 export default function Education() {
-  const education = {
-    degree: "Análise e Desenvolvimento de Sistemas",
-    status: "Em andamento",
-    description: "Curso superior focado em desenvolvimento de software, análise de sistemas e tecnologias modernas."
-  };
+  const education = [
+    {
+      degree: "Pós-graduação Lato Sensu Arquitetura e Desenvolvimento de Sistemas com ênfase em Padrões de Projeto",
+      status: "Em Andamento",
+      description: "Especialização em padrões de projeto (Design Patterns), focada na criação de softwares escaláveis, reutilizáveis e de fácil manutenção."
+    },
+    {
+      degree: "Pós-graduação Lato Sensu Arquitetura e Projetos de Cloud Computing",
+      status: "Em Andamento",
+      description: "Especialização focada no planejamento e implementação de infraestruturas escaláveis e seguras em nuvem, com ênfase em alta disponibilidade, otimização de custos e migração de serviços críticos."
+    },
+    {
+      degree: "Análise e Desenvolvimento de Sistemas",
+      status: "Concluída",
+      description: "Curso superior focado em desenvolvimento de software, análise de sistemas e tecnologias modernas."
+    },
+  ];
 
   const certifications = [
     {
@@ -43,12 +55,16 @@ export default function Education() {
               </div>
               <h3 className="text-xl font-semibold text-slate-900">Formação Acadêmica</h3>
             </div>
-            <div className="bg-white rounded-lg p-4">
-              <h4 className="font-semibold text-slate-900 mb-2">{education.degree}</h4>
-              <p className="text-slate-600 text-sm mb-2">{education.status}</p>
-              <p className="text-slate-700 text-sm">
-                {education.description}
-              </p>
+            <div className="space-y-3">
+              {education.map((edu, index) => (
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-semibold text-slate-900 mb-2">{edu.degree}</h4>
+                  <p className="text-slate-600 text-sm mb-2">{edu.status}</p>
+                  <p className="text-slate-700 text-sm">
+                    {edu.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
