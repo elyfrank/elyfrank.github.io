@@ -1,18 +1,18 @@
 export default function Education() {
   const education = [
     {
-      degree: "Pós-graduação Lato Sensu - Arquitetura e Desenvolvimento de Sistemas com ênfase em Padrões de Projeto",
-      status: "Em Andamento",
+      degree: "Pós-graduação - Arquitetura e Desenvolvimento de Sistemas com ênfase em Padrões de Projeto",
+      status: "Em andamento (Previsão: Set/2026)",
       description: "Especialização em padrões de projeto (Design Patterns), focada na criação de softwares escaláveis, reutilizáveis e de fácil manutenção."
     },
     {
-      degree: "Pós-graduação Lato Sensu - Arquitetura e Projetos de Cloud Computing",
-      status: "Em Andamento",
+      degree: "Pós-graduação - Arquitetura e Projetos de Cloud Computing",
+      status: "Em andamento (Previsão: Out/2026)",
       description: "Especialização focada no planejamento e implementação de infraestruturas escaláveis e seguras em nuvem, com ênfase em alta disponibilidade, otimização de custos e migração de serviços críticos."
     },
     {
       degree: "Análise e Desenvolvimento de Sistemas",
-      status: "Concluída",
+      status: "Concluído",
       description: "Curso superior focado em desenvolvimento de software, análise de sistemas e tecnologias modernas."
     },
   ];

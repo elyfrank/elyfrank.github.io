@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <div className="border-t border-slate-800 pt-8">
               <p className="text-slate-400 text-sm">
-                © 2025 Ely Frank Matias Oliveira. Todos os direitos reservados.
+                © 2026 Ely Frank Matias Oliveira. Todos os direitos reservados.
               </p>
             </div>
           </div>
