@@ -32,19 +32,19 @@ export default function Hero() {
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500 mb-8">
               <span className="flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                 </svg>
                 Natal, RN
               </span>
               <span className="flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                 </svg>
                 37 anos
               </span>
               <span className="flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                 </svg>
                 Casado
               </span>
@@ -52,9 +52,7 @@ export default function Hero() {
           </div>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-              Desenvolvedor Full Stack com mais de 16 anos de experiência em desenvolvimento de sistemas para o setor público e privado.
-              Especializado em PHP, Laravel, AngularJS, e tecnologias modernas de desenvolvimento web. 
-              Atualmente atuando como Desenvolvedor Sênior na Linuxell Informática, trabalhando em projetos para o Ministério do Trabalho e Emprego.
+              Desenvolvedor Sênior Full Stack com mais de 16 anos de experiência no desenho, desenvolvimento e manutenção de sistemas de missão crítica para os setores público e privado. Possuo forte expertise na construção de arquiteturas escaláveis utilizando PHP (Laravel, Zend, Symfony), ecossistemas JavaScript modernos (Vue.js, React, Angular) e práticas sólidas de DevOps. Ao longo da minha trajetória, atuei como responsável técnico em projetos de alta complexidade para grandes instituições, como STF, ENAP e CBMDF, sempre unindo qualidade de código, segurança e metodologias ágeis (Scrum/DevOps). Com especializações em andamento focadas em Cloud Computing e Padrões de Projeto, meu objetivo é criar soluções de software inovadoras, de fácil manutenção e que gerem valor real para o negócio.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
