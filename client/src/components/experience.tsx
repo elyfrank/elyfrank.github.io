@@ -44,19 +44,19 @@ export default function Experience() {
       case "briefcase":
         return (
           <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2zm2 4V4h-4v2h4z"/>
+            <path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2zm2 4V4h-4v2h4z" />
           </svg>
         );
       case "code":
         return (
           <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
           </svg>
         );
       case "file-text":
         return (
           <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
           </svg>
         );
       default:
@@ -72,7 +72,7 @@ export default function Experience() {
             Experiência Profissional
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Mais de 16 anos desenvolvendo soluções tecnológicas para governo e empresas privadas
+            Mais de 15 anos desenvolvendo soluções tecnológicas para governo e empresas privadas
           </p>
         </div>
 
@@ -82,29 +82,27 @@ export default function Experience() {
 
           {experiences.map((exp, index) => (
             <div key={index} className="relative flex items-center mb-12 last:mb-0">
-              <div className={`absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full border-4 border-white shadow-lg flex items-center justify-center ${
-                exp.color === 'portfolio-primary' ? 'bg-blue-600' :
-                exp.color === 'portfolio-accent' ? 'bg-blue-500' :
-                'bg-slate-600'
-              }`}>
+              <div className={`absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full border-4 border-white shadow-lg flex items-center justify-center ${exp.color === 'portfolio-primary' ? 'bg-blue-600' :
+                  exp.color === 'portfolio-accent' ? 'bg-blue-500' :
+                    'bg-slate-600'
+                }`}>
                 {getIcon(exp.icon)}
               </div>
-              
+
               <div className={`ml-12 md:ml-0 ${index % 2 === 0 ? 'md:w-1/2 md:pr-8 md:text-right' : 'md:w-1/2 md:ml-auto md:pl-8'}`}>
                 <div className="bg-slate-50 rounded-lg p-6 shadow-sm">
                   <div className={`mb-4 ${index % 2 === 0 ? 'md:flex md:flex-col md:items-end' : ''}`}>
                     <span className="text-sm text-slate-500 mb-2 block">{exp.period}</span>
                     <h3 className="text-xl font-semibold text-slate-900">{exp.position}</h3>
-                    <p className={`font-medium ${
-                      exp.color === 'portfolio-primary' ? 'text-blue-600' :
-                      exp.color === 'portfolio-accent' ? 'text-blue-500' :
-                      'text-slate-600'
-                    }`}>{exp.company}</p>
+                    <p className={`font-medium ${exp.color === 'portfolio-primary' ? 'text-blue-600' :
+                        exp.color === 'portfolio-accent' ? 'text-blue-500' :
+                          'text-slate-600'
+                      }`}>{exp.company}</p>
                   </div>
                   <p className="text-slate-700 leading-relaxed mb-4">
                     {exp.description}
                   </p>
-                  
+
                   {exp.clients && (
                     <div className="mb-4">
                       <h4 className="font-semibold text-slate-900 mb-2">Principais Clientes:</h4>
@@ -115,17 +113,16 @@ export default function Experience() {
                       </ul>
                     </div>
                   )}
-                  
+
                   {exp.technologies && (
                     <div className="flex flex-wrap gap-2 mt-4">
                       {exp.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className={`px-3 py-1 rounded-full text-sm ${
-                            exp.color === 'portfolio-primary' ? 'bg-blue-100 text-blue-600' :
-                            exp.color === 'portfolio-accent' ? 'bg-blue-50 text-blue-500' :
-                            'bg-slate-100 text-slate-600'
-                          }`}
+                          className={`px-3 py-1 rounded-full text-sm ${exp.color === 'portfolio-primary' ? 'bg-blue-100 text-blue-600' :
+                              exp.color === 'portfolio-accent' ? 'bg-blue-50 text-blue-500' :
+                                'bg-slate-100 text-slate-600'
+                            }`}
                         >
                           {tech}
                         </span>

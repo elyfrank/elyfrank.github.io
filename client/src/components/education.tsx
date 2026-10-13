@@ -2,7 +2,7 @@ export default function Education() {
   const education = [
     {
       degree: "Pós-graduação - Arquitetura e Desenvolvimento de Sistemas com ênfase em Padrões de Projeto",
-      status: "Em andamento (Previsão: Set/2026)",
+      status: "Concluído",
       description: "Especialização em padrões de projeto (Design Patterns), focada na criação de softwares escaláveis, reutilizáveis e de fácil manutenção."
     },
     {

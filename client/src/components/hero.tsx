@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-              Desenvolvedor Sênior Full Stack com mais de 16 anos de experiência no desenho, desenvolvimento e manutenção de sistemas de missão crítica para os setores público e privado. Possuo forte expertise na construção de arquiteturas escaláveis utilizando PHP (Laravel, Zend, Symfony), ecossistemas JavaScript modernos (Vue.js, React, Angular) e práticas sólidas de DevOps. Ao longo da minha trajetória, atuei como responsável técnico em projetos de alta complexidade para grandes instituições, como STF, ENAP e CBMDF, sempre unindo qualidade de código, segurança e metodologias ágeis (Scrum/DevOps). Com especializações em andamento focadas em Cloud Computing e Padrões de Projeto, meu objetivo é criar soluções de software inovadoras, de fácil manutenção e que gerem valor real para o negócio.
+              Desenvolvedor Sênior Full Stack com mais de 15 anos atuando na concepção e evolução de sistemas complexos para instituições estaduais e federais. Domino a criação de arquiteturas escaláveis com PHP (Laravel, Zend, Symfony), frameworks JavaScript (Vue.js, Angular, React) e infraestrutura DevOps. Minha trajetória é marcada pela responsabilidade técnica em projetos críticos para clientes como STF, ENAP e CBMDF, garantindo entregas seguras e de alta performance. Atualmente me especializando em Cloud Computing e Design Patterns, busco sempre aliar inovação tecnológica com código limpo para construir produtos que impulsionem os resultados das organizações.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
