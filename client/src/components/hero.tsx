@@ -36,25 +36,17 @@ export default function Hero() {
                 </svg>
                 Natal, RN
               </span>
-              <span className="flex items-center">
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                </svg>
-                37 anos
-              </span>
-              <span className="flex items-center">
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-                Casado
+              <span className="flex items-center bg-green-100 text-green-700 font-medium px-3 py-1 rounded-full">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                Aberto a oportunidades remotas — CLT ou PJ
               </span>
             </div>
           </div>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-              Desenvolvedor Sênior Full Stack com mais de 15 anos atuando na concepção e evolução de sistemas complexos para instituições estaduais e federais. Domínio na criação de arquiteturas escaláveis com PHP (Laravel, Zend, Symfony), frameworks JavaScript (Vue.js, Angular, React) e infraestrutura DevOps. Trajetória marcada pela responsabilidade técnica em projetos críticos para clientes como STF, ENAP e CBMDF, garantindo entregas seguras e de alta performance. Experiência no desenvolvimento de agentes de IA para automação de processos, com integrações via MCP (Model Context Protocol). Atualmente se especializando em Cloud Computing, aliando inovação tecnológica e código limpo para construir produtos que impulsionem os resultados das organizações.
+              Desenvolvedor Sênior Full Stack com mais de 15 anos em sistemas críticos para órgãos públicos federais e estaduais, como STF, ENAP, CBMDF e AGRODEFESA. Responsável técnico por projetos em PHP (Laravel, Symfony, Zend), Vue.js, Angular, React e PostgreSQL, em times ágeis com Scrum (certificações SFPC e CSD). Experiência no desenvolvimento de agentes de IA para automação de processos com MCP (Model Context Protocol). Pós-graduado em Padrões de Projeto e em Cloud Computing.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 justify-center">
               <button
                 onClick={() => scrollToSection("contato")}
                 className="bg-portfolio-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
@@ -67,6 +59,16 @@ export default function Hero() {
               >
                 Ver Experiência
               </button>
+              <a
+                href="/Curriculo_Ely_Frank_Matias_Oliveira.pdf"
+                download
+                className="inline-flex items-center justify-center border-2 border-portfolio-primary text-portfolio-primary px-8 py-3 rounded-lg font-semibold hover:bg-portfolio-primary hover:text-white transition-colors duration-200"
+              >
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z" />
+                </svg>
+                Baixar Currículo (PDF)
+              </a>
             </div>
           </div>
         </div>

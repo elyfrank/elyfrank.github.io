@@ -29,6 +29,12 @@ export default function Skills() {
       icon: "ai",
       color: "orange",
       skills: ["Agentes de IA", "MCP (Model Context Protocol)", "Automação de processos com IA", "Integração com LLMs", "Engenharia de prompts"]
+    },
+    {
+      title: "Metodologias Ágeis",
+      icon: "agile",
+      color: "teal",
+      skills: ["Scrum", "Sprints e planejamento", "Daily, review e retrospectiva", "Gestão de backlog"]
     }
   ];
 
@@ -38,7 +44,8 @@ export default function Skills() {
     blue: "bg-blue-100 text-blue-600",
     green: "bg-green-100 text-green-600",
     purple: "bg-purple-100 text-purple-600",
-    orange: "bg-orange-100 text-orange-600"
+    orange: "bg-orange-100 text-orange-600",
+    teal: "bg-teal-100 text-teal-600"
   };
 
   const getIcon = (iconName: string) => {
@@ -73,6 +80,12 @@ export default function Skills() {
             <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M7.5,13A2.5,2.5 0 0,0 5,15.5A2.5,2.5 0 0,0 7.5,18A2.5,2.5 0 0,0 10,15.5A2.5,2.5 0 0,0 7.5,13M16.5,13A2.5,2.5 0 0,0 14,15.5A2.5,2.5 0 0,0 16.5,18A2.5,2.5 0 0,0 19,15.5A2.5,2.5 0 0,0 16.5,13Z"/>
           </svg>
         );
+      case "agile":
+        return (
+          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12,6V9L16,5L12,1V4A8,8 0 0,0 4,12C4,13.57 4.46,15.03 5.24,16.26L6.7,14.8C6.25,13.97 6,13 6,12A6,6 0 0,1 12,6M18.76,7.74L17.3,9.2C17.74,10.04 18,11 18,12A6,6 0 0,1 12,18V15L8,19L12,23V20A8,8 0 0,0 20,12C20,10.43 19.54,8.97 18.76,7.74Z"/>
+          </svg>
+        );
       default:
         return null;
     }
@@ -90,7 +103,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
               <div className="flex items-center mb-4">

@@ -1,14 +1,14 @@
 export default function Education() {
   const education = [
     {
+      degree: "Pós-graduação - Arquitetura e Projetos de Cloud Computing",
+      status: "Concluído",
+      description: "Especialização focada no planejamento e implementação de infraestruturas escaláveis e seguras em nuvem, com ênfase em alta disponibilidade, otimização de custos e migração de serviços críticos."
+    },
+    {
       degree: "Pós-graduação - Arquitetura e Desenvolvimento de Sistemas com ênfase em Padrões de Projeto",
       status: "Concluído",
       description: "Especialização em padrões de projeto (Design Patterns), focada na criação de softwares escaláveis, reutilizáveis e de fácil manutenção."
-    },
-    {
-      degree: "Pós-graduação - Arquitetura e Projetos de Cloud Computing",
-      status: "Em andamento (Previsão: Out/2026)",
-      description: "Especialização focada no planejamento e implementação de infraestruturas escaláveis e seguras em nuvem, com ênfase em alta disponibilidade, otimização de custos e migração de serviços críticos."
     },
     {
       degree: "Análise e Desenvolvimento de Sistemas",
@@ -57,7 +57,7 @@ export default function Education() {
             </div>
             <div className="space-y-3">
               {education.map((edu, index) => (
-                <div className="bg-white rounded-lg p-4">
+                <div key={index} className="bg-white rounded-lg p-4">
                   <h4 className="font-semibold text-slate-900 mb-2">{edu.degree}</h4>
                   <p className="text-slate-600 text-sm mb-2">{edu.status}</p>
                   <p className="text-slate-700 text-sm">

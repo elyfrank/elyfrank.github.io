@@ -4,7 +4,7 @@ export default function Experience() {
       period: "2024 - Atual",
       position: "Desenvolvedor Sênior",
       company: "Linuxell Informática",
-      description: "Atualmente na Agência Goiana de Defesa Agropecuária (AGRODEFESA), atuo no desenvolvimento e sustentação de sistemas críticos, como o SIDAGO, e na digitalização de serviços essenciais como a emissão de Guia de Trânsito Animal (GTA), Permissões de Trânsito de Vegetais (PTV) e passaporte equestre. Modernizando a defesa sanitária e os serviços de fiscalização do estado, aplicando metodologias ágeis para garantir entregas eficientes.",
+      description: "Atualmente na Agência Goiana de Defesa Agropecuária (AGRODEFESA), atuo no desenvolvimento e sustentação de sistemas críticos, como o SIDAGO, e na digitalização de serviços essenciais como a emissão de Guia de Trânsito Animal (GTA), Permissões de Trânsito de Vegetais (PTV) e passaporte equestre. Modernizando a defesa sanitária e os serviços de fiscalização do estado, atuando em time ágil com Scrum para garantir entregas eficientes.",
       clients: [
         "Agência Goiana de Defesa Agropecuária (AGRODEFESA)",
         "Ministério do Trabalho e Emprego (MTE)"
@@ -17,7 +17,7 @@ export default function Experience() {
       period: "2014 - 2024",
       position: "Desenvolvedor Full Stack",
       company: "Websis Tecnologia e Sistemas",
-      description: "Desenvolvedor Full Stack com experiência em diversos projetos para o Governo Federal e Estadual. Principais clientes: ENAP, STF, SEST, PRODABEL (Prefeitura de Belo Horizonte) e CBMDF. Responsável técnico pelos projetos, atuando tanto no backend quanto no frontend.",
+      description: "Desenvolvimento de diversos projetos para o Governo Federal e Estadual. Responsável técnico pelos projetos, atuando tanto no backend quanto no frontend.",
       clients: [
         "Escola Nacional de Administração Pública (ENAP)",
         "Supremo Tribunal Federal (STF)",
@@ -25,6 +25,7 @@ export default function Experience() {
         "PRODABEL - Prefeitura de Belo Horizonte",
         "Corpo de Bombeiros Militar do DF (CBMDF)"
       ],
+      technologies: ["PHP", "Laravel", "Symfony", "Zend", "Vue.js", "Angular", "React", "TypeScript", "PostgreSQL", "MySQL", "Oracle", "Docker"],
       icon: "code",
       color: "portfolio-accent"
     },
@@ -32,7 +33,11 @@ export default function Experience() {
       period: "2009 - 2012",
       position: "Analista GED/ECM",
       company: "Montreal Informática",
-      description: "Primeira experiência em empresa de tecnologia. Evolução de auxiliar administrativo para analista e desenvolvedor em ferramentas de gerenciamento de conteúdo (Documentum e Captiva). Principais projetos para AVON e ANVISA, com foco em digitalização de informações.",
+      description: "Primeira experiência em empresa de tecnologia, com evolução de auxiliar administrativo para analista e desenvolvedor em ferramentas de gerenciamento de conteúdo (Documentum e Captiva), com foco em digitalização de informações.",
+      clients: [
+        "AVON",
+        "Agência Nacional de Vigilância Sanitária (ANVISA)"
+      ],
       technologies: ["Documentum", "Captiva", "GED/ECM"],
       icon: "file-text",
       color: "portfolio-secondary"
