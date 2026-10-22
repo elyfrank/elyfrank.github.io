@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-              Desenvolvedor Sênior Full Stack com mais de 15 anos atuando na concepção e evolução de sistemas complexos para instituições estaduais e federais. Domino a criação de arquiteturas escaláveis com PHP (Laravel, Zend, Symfony), frameworks JavaScript (Vue.js, Angular, React) e infraestrutura DevOps. Minha trajetória é marcada pela responsabilidade técnica em projetos críticos para clientes como STF, ENAP e CBMDF, garantindo entregas seguras e de alta performance. Atualmente me especializando em Cloud Computing e Design Patterns, busco sempre aliar inovação tecnológica com código limpo para construir produtos que impulsionem os resultados das organizações.
+              Desenvolvedor Sênior Full Stack com mais de 15 anos atuando na concepção e evolução de sistemas complexos para instituições estaduais e federais. Domínio na criação de arquiteturas escaláveis com PHP (Laravel, Zend, Symfony), frameworks JavaScript (Vue.js, Angular, React) e infraestrutura DevOps. Trajetória marcada pela responsabilidade técnica em projetos críticos para clientes como STF, ENAP e CBMDF, garantindo entregas seguras e de alta performance. Experiência no desenvolvimento de agentes de IA para automação de processos, com integrações via MCP (Model Context Protocol). Atualmente se especializando em Cloud Computing, aliando inovação tecnológica e código limpo para construir produtos que impulsionem os resultados das organizações.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
