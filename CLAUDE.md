@@ -1,5 +1,9 @@
 # Portfólio Ely Frank
 
+## Commits
+
+Não adicione coautoria nos commits: nada de trailer `Co-Authored-By`.
+
 ## Subir em localhost
 
 O Node padrão do nvm é o v14, mas o Vite 5 exige Node 18 ou superior. Ative o Node 24 antes de qualquer comando:
