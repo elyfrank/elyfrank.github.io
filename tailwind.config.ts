@@ -11,6 +11,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        // Cor de destaque do portfólio: para trocar a paleta, altere só estes dois valores.
+        brand: { DEFAULT: "#173a6b", dark: "#0f2a4f" },
         background: "var(--background)",
         foreground: "var(--foreground)",
         card: {

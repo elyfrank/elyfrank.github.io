@@ -1,109 +1,107 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
+
+const navItems = [
+  { id: "inicio", label: "Início" },
+  { id: "experiencia", label: "Experiência" },
+  { id: "projetos", label: "Projetos" },
+  { id: "habilidades", label: "Habilidades" },
+  { id: "formacao", label: "Formação" },
+  { id: "contato", label: "Contato" },
+];
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("inicio");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll("section[id]");
       const scrollPos = window.scrollY + 100;
-
+      const sections = document.querySelectorAll<HTMLElement>("section[id]");
+      // A última seção pode não alcançar o topo da tela: no fim da página, ela é a ativa.
+      const atPageEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atPageEnd && sections.length > 0) {
+        setActiveSection(sections[sections.length - 1].id);
+        return;
+      }
       sections.forEach((section) => {
-        const element = section as HTMLElement;
-        if (
-          scrollPos >= element.offsetTop &&
-          scrollPos < element.offsetTop + element.offsetHeight
-        ) {
-          setActiveSection(element.id);
+        if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+          setActiveSection(section.id);
         }
       });
     };
 
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.offsetTop;
-      const offsetPosition = elementPosition - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-    setIsMenuOpen(false);
-  };
-
-  const navItems = [
-    { id: "inicio", label: "Início" },
-    { id: "experiencia", label: "Experiência" },
-    { id: "habilidades", label: "Habilidades" },
-    { id: "formacao", label: "Formação" },
-    { id: "contato", label: "Contato" },
-  ];
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsMenuOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [isMenuOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-slate-200 z-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50">
+      <nav aria-label="Principal" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-portfolio-primary">
-              Ely Frank
-            </span>
-          </div>
-          
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+          <a href="#inicio" className="text-xl font-bold text-brand">
+            Ely Frank
+          </a>
+
+          <ul className="hidden md:flex items-center gap-8">
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  aria-current={activeSection === item.id ? "location" : undefined}
                   className={`transition-colors duration-200 ${
                     activeSection === item.id
-                      ? "text-portfolio-primary"
-                      : "text-slate-600 hover:text-portfolio-primary"
+                      ? "text-brand font-medium"
+                      : "text-slate-600 hover:text-brand"
                   }`}
                 >
                   {item.label}
-                </button>
-              ))}
-            </div>
-          </div>
-          
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-slate-600 hover:text-portfolio-primary"
-            >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-slate-200">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-3 py-2 text-slate-600 hover:text-portfolio-primary"
-              >
-                {item.label}
-              </button>
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
+
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="menu-mobile"
+            className="md:hidden -mr-2 p-2 text-slate-700 hover:text-brand"
+          >
+            {isMenuOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
+          </button>
         </div>
-      )}
-    </nav>
+
+        {isMenuOpen && (
+          <ul id="menu-mobile" className="md:hidden border-t border-slate-200 py-2">
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  onClick={() => setIsMenuOpen(false)}
+                  aria-current={activeSection === item.id ? "location" : undefined}
+                  className={`block py-3 ${
+                    activeSection === item.id ? "text-brand font-medium" : "text-slate-700 hover:text-brand"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </nav>
+    </header>
   );
 }

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
   --background: hsl(0, 0%, 100%);
@@ -27,7 +26,7 @@
   --radius: 0.5rem;
   
   /* Custom portfolio colors */
-  --portfolio-primary: hsl(217, 91%, 60%);
+  --portfolio-primary: #173a6b;
   --portfolio-secondary: hsl(215, 16%, 47%);
   --portfolio-accent: hsl(220, 91%, 64%);
   --portfolio-slate-50: hsl(210, 40%, 98%);
@@ -68,6 +67,28 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  :focus-visible {
+    outline: 3px solid #173a6b;
+    outline-offset: 2px;
+  }
+
+  footer :focus-visible {
+    outline-color: #fff;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+    }
   }
 }
 
