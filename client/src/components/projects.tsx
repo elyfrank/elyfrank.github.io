@@ -1,7 +1,24 @@
 import { ExternalLink } from "lucide-react";
 import { GITHUB_URL } from "@/lib/contact";
 
-const projects = [
+type Project = {
+  name: string;
+  url: string;
+  /** Site publicado do projeto, quando houver. */
+  siteUrl?: string;
+  description: string;
+  technologies: string[];
+};
+
+const projects: Project[] = [
+  {
+    name: "Pedal Seguro: QR de emergência para ciclistas",
+    url: `${GITHUB_URL}/contato-emergencia`,
+    siteUrl: "https://elyfrank.github.io/contato-emergencia/quem-somos.html",
+    description:
+      "Um adesivo com QR code no capacete abre uma página com tipo sanguíneo, alergias e botões para ligar para a família. Os dados pessoais nunca entram no repositório público, e a página mostra só o necessário para dificultar o golpe do falso acidente.",
+    technologies: ["TypeScript", "Node.js", "Zod", "GitHub Actions"],
+  },
   {
     name: "Agente de Finanças Pessoais",
     url: `${GITHUB_URL}/agente_financas_pessoais`,
@@ -55,16 +72,30 @@ export default function Projects() {
                   </li>
                 ))}
               </ul>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Ver código no GitHub: ${project.name}`}
-                className="inline-flex items-center py-1 font-medium text-brand hover:text-brand-dark hover:underline"
-              >
-                Ver código no GitHub
-                <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
-              </a>
+              <div className="flex flex-wrap gap-x-6 gap-y-2">
+                {project.siteUrl && (
+                  <a
+                    href={project.siteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Ver o site: ${project.name}`}
+                    className="inline-flex items-center py-1 font-medium text-brand hover:text-brand-dark hover:underline"
+                  >
+                    Ver o site
+                    <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+                  </a>
+                )}
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Ver código no GitHub: ${project.name}`}
+                  className="inline-flex items-center py-1 font-medium text-brand hover:text-brand-dark hover:underline"
+                >
+                  Ver código no GitHub
+                  <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+                </a>
+              </div>
             </li>
           ))}
         </ul>
